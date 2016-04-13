@@ -1,6 +1,6 @@
 <template name="Reminder">
 	<div class="container">  
-		<h2>Add a Remainder <a href="{{pathFor route='createReminder'}}"><img src="images/add.png"  height="50" ></a></h2>
+		<h2>Todo <a href="{{pathFor route='createReminder'}}"><img src="images/add.png"  height="50" ></a></h2>
 		<hr class="divider">
 	</div>
 </template>
@@ -9,7 +9,7 @@
 	{{> Navbar}}
 	<div class="container-fluid">
 	  	<div class="container" id="container">
-	    	<h1>To do list ({{incompleteCount}})</h1>
+	    	<h1>Todo note ({{incompleteCount}})</h1>
 	       	<label class="hide-completed" id="hide">
 	        <input type="checkbox" checked= "{{hideCompleted}}" />
 	          Hide Completed Tasks
